@@ -239,7 +239,7 @@ class PasswordService {
 								$userlang->t('Website or company') . ':</strong><br>' .
 								$website .
 								'<br><br>' .
-								$userlang->t('Login on %s to view the password', '<a href="' . $fullurl . '" target="_blank">' . $instancename . ' ' . $appname . '</a>') . '.'
+								$userlang->t('Login on %s to view the password', '<a href="' . $fullurl . '" target="_blank" rel="noopener noreferrer">' . $instancename . ' ' . $appname . '</a>') . '.'
 							);
 
 						} elseif ($kind == 'stop') {
