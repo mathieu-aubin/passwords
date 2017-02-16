@@ -2366,17 +2366,32 @@ function webimg2new() {
 		$('#websiteimg').attr('style', '');
 	}
 }
+
 function escapeHTML(text, only_brackets) {
+	// adapted from mustache.js
+	var entityMap = {
+		'&': '&amp;',
+		'<': '&lt;',
+		'>': '&gt;',
+		'"': '&quot;',
+		"'": '&#39;',
+		'/': '&#x2F;',
+		'`': '&#x60;',
+		'=': '&#x3D;'
+	};
 	if (typeof text !== 'undefined') {
 		if (only_brackets) {
 			return text.replace(/</g,'&lt;').replace(/>/g,'&gt;');
 		} else {
-			return text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+			return text.replace(/[&<>"'`=\/]/g, function (s) {
+				return entityMap[s];
+			});
 		}
 	} else {
 		return text;
 	}
 }
+
 function escapeJSON(text) {
 
 	// unquote element names and values first with just a random string
