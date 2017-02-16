@@ -21,6 +21,7 @@
 * Renamed script.js to passwords.js to make debugging more transparant and to comply with ownCloud and NextCloud standards
 * Fix for records with user names in API, with ID = 0
 * Fix for NextCloud 11
+* Improved HTML escape function, based on `mustache.js`
 * Fix for user defined avatars not showing
 * Fix for deleted flag in PostgreSQL combined with Firefox, but changing the database type to 'real' booleans (rather than integers - 0 and 1)
 * Fix for sharing using LDAP
