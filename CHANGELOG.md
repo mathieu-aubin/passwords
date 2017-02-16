@@ -20,6 +20,7 @@
 * Temporary fix for use with the `user_saml` authentication: the extra ownCloud/NextCloud authentication doesn't work and will be blocked. A notice will be displayed on the admin page.
 * Renamed script.js to passwords.js to make debugging more transparant and to comply with ownCloud and NextCloud standards
 * Fix for records with user names in API, with ID = 0
+* Fix for NextCloud 11
 * Fix for user defined avatars not showing
 * Fix for deleted flag in PostgreSQL combined with Firefox, but changing the database type to 'real' booleans (rather than integers - 0 and 1)
 * Fix for sharing using LDAP
