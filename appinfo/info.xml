@@ -13,7 +13,7 @@
 	</description>
 	<licence>AGPL</licence>
 	<author>Fallon Turner</author>
-	<version>20-beta6</version>
+	<version>20-beta7</version>
 	<namespace>Passwords</namespace>
 	<category>tool</category>
 	<website>https://github.com/fcturner/passwords</website>
@@ -21,8 +21,8 @@
 	<repository type="git">https://github.com/fcturner/passwords.git</repository>
 	<ocsid>170480</ocsid>
 	<dependencies>
-		<owncloud min-version="8.0" max-version="10.0"/>
-		<nextcloud min-version="9.0" max-version="11.0"/>
+		<owncloud min-version="8.0" max-version="11.0"/>
+		<nextcloud min-version="9.0" max-version="13.0"/>
 		<database>sqlite</database>
 		<database>mysql</database>
 		<database>pgsql</database>

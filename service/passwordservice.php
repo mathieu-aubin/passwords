@@ -74,7 +74,7 @@ class PasswordService {
 			
 			// remove eligable share users when using API
 			if ($arr[$row]['id'] == '0' && $api) {
-				array_splice($arr, $row, 1);
+				unset($arr[$row]);
 			}
 		}
 
@@ -239,7 +239,7 @@ class PasswordService {
 								$userlang->t('Website or company') . ':</strong><br>' .
 								$website .
 								'<br><br>' .
-								$userlang->t('Login on %s to view the password', '<a href="' . $fullurl . '" target="_blank">' . $instancename . ' ' . $appname . '</a>') . '.'
+								$userlang->t('Login on %s to view the password', '<a href="' . $fullurl . '" target="_blank" rel="noopener noreferrer">' . $instancename . ' ' . $appname . '</a>') . '.'
 							);
 
 						} elseif ($kind == 'stop') {

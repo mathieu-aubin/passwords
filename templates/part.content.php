@@ -93,7 +93,7 @@ $version = \OC::$server->getConfig()->getAppValue('passwords', 'installed_versio
 
 	<script id="template-passwords-serialize" type="text/x-handlebars-template">
 		{{#each passwords}}
-			"website" : "{{ website }}", "pass" : "{{ pass }}", {{ properties }}, "deleted" : "{{ deleted }}", "id" : "{{ id }}", "user_id" : "{{ user_id }}"<br>
+			"website" : "{{ website }}", "pass" : "{{ pass }}", {{#if properties}}{{ properties }}{{/if}}, "deleted" : "{{ deleted }}", "id" : "{{ id }}", "user_id" : "{{ user_id }}"<br>
 		{{/each}}
 	</script>
 
